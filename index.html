@@ -1,84 +1,232 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سياسة الخصوصية - عداد شقاوة</title>
+<title>سياسة الخصوصية - عداد شقاوة | Shqawa Counter</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق عداد شقاوة - كيف نتعامل مع بياناتك وأذوناتك">
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #07182d;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: #050d1a;
+    color: #e2e8f0;
+    line-height: 1.9;
+    padding: 0;
+  }
+  .header {
+    background: linear-gradient(135deg, #07182d 0%, #0a2a4d 50%, #7f1d1d 100%);
+    padding: 50px 25px 40px;
+    text-align: center;
+    border-bottom: 3px solid #38bdf8;
+  }
+  .header .logo {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 32px;
     color: #fff;
-    line-height: 2;
-    padding: 25px;
+    margin-bottom: 8px;
+  }
+  .header p {
+    color: #94a3b8;
+    font-size: 15px;
+  }
+  .badge {
+    display: inline-block;
+    background: #38bdf8;
+    color: #07182d;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  .container {
     max-width: 850px;
-    margin: auto;
-}
-h1, h2 { color: #38bdf8; }
-section {
-    background: #102943;
-    padding: 18px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-a { color: #38bdf8; }
+    margin: -20px auto 0;
+    padding: 0 20px 40px;
+    position: relative;
+    z-index: 2;
+  }
+  .card {
+    background: #0f2440;
+    border: 1px solid #1e3a5f;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .card h2 {
+    color: #38bdf8;
+    font-size: 19px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card h2 span {
+    background: #38bdf8;
+    color: #07182d;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .card p, .card li {
+    color: #cbd5e1;
+    font-size: 15.5px;
+  }
+  .card ul { list-style: none; padding: 0; }
+  .card li {
+    padding: 8px 0 8px 28px;
+    position: relative;
+  }
+  .card li::before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    color: #22c55e;
+    font-weight: bold;
+  }
+  .highlight {
+    background: #132f4d;
+    border-right: 4px solid #ef4444;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 12px;
+    font-size: 14.5px;
+    color: #fca5a5;
+  }
+  .contact-box {
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    text-align: center;
+    padding: 28px;
+    border-radius: 16px;
+    margin-top: 10px;
+  }
+  .contact-box h2 { color: #fff; justify-content: center; }
+  .contact-box a {
+    display: inline-block;
+    background: #fff;
+    color: #0a2a4d;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin-top: 12px;
+  }
+  .footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    padding: 20px;
+    line-height: 1.7;
+  }
+  .footer a { color: #38bdf8; text-decoration: none; }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 26px; }
+    .card { padding: 18px; }
+  }
 </style>
 </head>
 <body>
 
-<h1>سياسة الخصوصية - عداد شقاوة</h1>
-<p>آخر تحديث: 20 نوفمبر 2026</p>
+<div class="header">
+  <div class="logo">🧭</div>
+  <h1>سياسة الخصوصية</h1>
+  <p>تطبيق عداد شقاوة - Shqawa Counter</p>
+  <span class="badge">آخر تحديث: 20 نوفمبر 2026</span>
+</div>
 
-<section>
-<h2>1. مقدمة</h2>
-<p>
-نحترم خصوصية مستخدمي تطبيق عداد شقاوة، ونوضح في هذه الصفحة
-كيفية استخدام الأذونات والبيانات اللازمة لتشغيل التطبيق.
-</p>
-</section>
+<div class="container">
 
-<section>
-<h2>2. الموقع الجغرافي GPS</h2>
-<p>
-يستخدم التطبيق إذن الموقع الجغرافي عند تفعيله لحساب سرعة المركبة
-والمسافة المقطوعة وتشغيل وظائف عداد السرعة.
-</p>
-</section>
+  <div class="card">
+    <h2><span>1</span> مقدمة</h2>
+    <p>
+      أهلاً بيك في <b style="color:#fff">عداد شقاوة</b>. احنا بنحترم خصوصيتك جداً، وعشان كده عملنا الصفحة دي عشان نوضحلك بالظبط احنا بناخد ايه، وبنستخدمه في ايه، وبنحميه ازاي.
+    </p>
+    <p style="margin-top:10px">
+      باستخدامك للتطبيق، انت بتوافق على سياسة الخصوصية دي. لو مش موافق، ممكن تمسح التطبيق في أي وقت.
+    </p>
+  </div>
 
-<section>
-<h2>3. تخزين البيانات</h2>
-<p>
-يحفظ التطبيق بعض إعدادات العداد على الجهاز، مثل المسافة الكلية
-ومسافة صيانة الزيت ومعايرة السرعة والخلفية المختارة.
-</p>
-</section>
+  <div class="card">
+    <h2><span>2</span> البيانات اللي بنجمعها</h2>
+    <p>التطبيق <b style="color:#fff">لا يجمع أي بيانات شخصية</b> زي اسمك أو رقم تليفونك أو صورك.</p>
+    <ul>
+      <li><b style="color:#fff">الموقع الجغرافي GPS:</b> بيشتغل بس لما انت تفعّله بنفسك، عشان يحسب سرعة المركبة والمسافة المقطوعة.</li>
+      <li><b style="color:#fff">إعدادات الجهاز:</b> زي المسافة الكلية، مسافة صيانة الزيت، معايرة السرعة، والخلفية اللي انت اخترتها.</li>
+    </ul>
+    <div class="highlight">
+      ⚠️ مهم: بيانات الموقع بتتعالج على جهازك بس، ومش بتتبعت لأي سيرفر خاص بينا في النسخة الحالية.
+    </div>
+  </div>
 
-<section>
-<h2>4. مشاركة البيانات</h2>
-<p>
-تُستخدم بيانات الموقع لتشغيل وظائف العداد. لا يرسل التطبيق
-بيانات الموقع إلى خوادم المطور في النسخة الحالية، وفقًا
-للكود والوظائف الحالية للتطبيق.
-</p>
-</section>
+  <div class="card">
+    <h2><span>3</span> ازاي بنستخدم البيانات؟</h2>
+    <ul>
+      <li>تشغيل وظيفة عداد السرعة والمسافة بدقة</li>
+      <li>حفظ إعداداتك عشان تلاقيها زي ما هي لما تفتح التطبيق تاني</li>
+      <li>تحسين أداء التطبيق وإصلاح أي مشاكل</li>
+    </ul>
+  </div>
 
-<section>
-<h2>5. الأذونات</h2>
-<p>
-يمكن للمستخدم التحكم في أذونات التطبيق، بما فيها إذن الموقع،
-من إعدادات جهاز Android.
-</p>
-</section>
+  <div class="card">
+    <h2><span>4</span> مشاركة البيانات مع أطراف تالتة</h2>
+    <p>
+      احنا <b style="color:#fff">لا نبيع ولا نشارك ولا نأجر</b> بياناتك لأي حد.
+      التطبيق لا يحتوي على إعلانات من شركات تتبع، ولا يرسل موقعك لأي شركة إعلانات.
+    </p>
+  </div>
 
-<section>
-<h2>6. التواصل</h2>
-<p>
-للاستفسارات المتعلقة بالخصوصية يمكنك التواصل عبر البريد الإلكتروني:
-</p>
-<p><a href="mailto:hs7591456@gmail.com">hs7591456@gmail.com</a></p>
-</section>
+  <div class="card">
+    <h2><span>5</span> الأذونات اللي بيطلبها التطبيق</h2>
+    <ul>
+      <li><b style="color:#fff">الموقع الدقيق:</b> لتشغيل عداد السرعة فقط، وانت تقدر تقفله في أي وقت</li>
+      <li><b style="color:#fff">التخزين:</b> لحفظ إعداداتك على جهازك</li>
+    </ul>
+    <p style="margin-top:10px">تقدر تتحكم في كل الأذونات من: <b style="color:#fff">إعدادات الهاتف > التطبيقات > عداد شقاوة > الأذونات</b></p>
+  </div>
+
+  <div class="card">
+    <h2><span>6</span> أمان بياناتك</h2>
+    <p>
+      كل بياناتك بتتخزن على جهازك بس، ومش بتخرج منه. احنا بنستخدم أفضل الممارسات عشان نحافظ على إعداداتك، لكن مفيش طريقة على الإنترنت آمنة 100%، ولو حصل أي تغيير في سياستنا هنبلغك هنا.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span>7</span> خصوصية الأطفال</h2>
+    <p>
+      التطبيق مناسب لكل الأعمار، واحنا مش بنجمع بيانات من الأطفال بشكل متعمد. لو انت ولي أمر وشاكك إن طفلك شارك أي بيانات، تواصل معانا وهنمسحها فوراً.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span>8</span> تغييرات على سياسة الخصوصية</h2>
+    <p>
+      ممكن نحدث الصفحة دي من وقت للتاني. أي تحديث هيظهر هنا بتاريخ جديد، واستمرارك في استخدام التطبيق بعد التحديث معناه موافقتك على النسخة الجديدة.
+    </p>
+  </div>
+
+  <div class="contact-box">
+    <h2>عندك سؤال عن الخصوصية؟</h2>
+    <p style="color:#e0f2fe">كلمنا في أي وقت، وهنرد عليك في أسرع وقت</p>
+    <a href="mailto:hs7591456@gmail.com">hs7591456@gmail.com</a>
+    <p style="color:#bfdbfe; font-size:13px; margin-top:12px;">المطور: shqawa.pro</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 عداد شقاوة - Shqawa Counter. جميع الحقوق محفوظة.<br>
+  <a href="https://shqawa.pro">shqawa.pro</a>
+</div>
 
 </body>
-</html>
-
+    </html>
