@@ -20,114 +20,47 @@
     text-align: center;
     border-bottom: 3px solid #38bdf8;
   }
-  .header .logo {
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-  .header h1 {
-    font-size: 32px;
-    color: #fff;
-    margin-bottom: 8px;
-  }
-  .header p {
-    color: #94a3b8;
-    font-size: 15px;
-  }
+  .header .logo { font-size: 48px; margin-bottom: 10px; }
+  .header h1 { font-size: 32px; color: #fff; margin-bottom: 8px; }
+  .header p { color: #94a3b8; font-size: 15px; }
   .badge {
-    display: inline-block;
-    background: #38bdf8;
-    color: #07182d;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 5px 14px;
-    border-radius: 20px;
-    margin-top: 15px;
+    display: inline-block; background: #38bdf8; color: #07182d;
+    font-weight: bold; font-size: 13px; padding: 5px 14px;
+    border-radius: 20px; margin-top: 15px;
   }
-  .container {
-    max-width: 850px;
-    margin: -20px auto 0;
-    padding: 0 20px 40px;
-    position: relative;
-    z-index: 2;
-  }
+  .container { max-width: 850px; margin: -20px auto 0; padding: 0 20px 40px; position: relative; z-index: 2; }
   .card {
-    background: #0f2440;
-    border: 1px solid #1e3a5f;
-    border-radius: 16px;
-    padding: 24px;
-    margin-bottom: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    background: #0f2440; border: 1px solid #1e3a5f; border-radius: 16px;
+    padding: 24px; margin-bottom: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   }
-  .card h2 {
-    color: #38bdf8;
-    font-size: 19px;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  .card h2 { color: #38bdf8; font-size: 19px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
   .card h2 span {
-    background: #38bdf8;
-    color: #07182d;
-    width: 30px; height: 30px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    flex-shrink: 0;
+    background: #38bdf8; color: #07182d; width: 30px; height: 30px;
+    border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+    font-size: 15px; flex-shrink: 0;
   }
-  .card p, .card li {
-    color: #cbd5e1;
-    font-size: 15.5px;
-  }
+  .card p, .card li { color: #cbd5e1; font-size: 15.5px; }
   .card ul { list-style: none; padding: 0; }
-  .card li {
-    padding: 8px 0 8px 28px;
-    position: relative;
-  }
-  .card li::before {
-    content: "✓";
-    position: absolute;
-    right: 0;
-    color: #22c55e;
-    font-weight: bold;
-  }
+  .card li { padding: 8px 0 8px 28px; position: relative; }
+  .card li::before { content: "✓"; position: absolute; right: 0; color: #22c55e; font-weight: bold; }
   .highlight {
-    background: #132f4d;
-    border-right: 4px solid #ef4444;
-    padding: 16px;
-    border-radius: 10px;
-    margin-top: 12px;
-    font-size: 14.5px;
-    color: #fca5a5;
+    background: #132f4d; border-right: 4px solid #ef4444;
+    padding: 16px; border-radius: 10px; margin-top: 12px;
+    font-size: 14.5px; color: #fca5a5;
   }
   .contact-box {
     background: linear-gradient(135deg, #0ea5e9, #2563eb);
-    text-align: center;
-    padding: 28px;
-    border-radius: 16px;
-    margin-top: 10px;
+    text-align: center; padding: 28px; border-radius: 16px; margin-top: 10px;
   }
   .contact-box h2 { color: #fff; justify-content: center; }
   .contact-box a {
-    display: inline-block;
-    background: #fff;
-    color: #0a2a4d;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 12px 28px;
-    border-radius: 30px;
-    margin-top: 12px;
+    display: inline-block; background: #fff; color: #0a2a4d;
+    font-weight: bold; text-decoration: none; padding: 12px 28px;
+    border-radius: 30px; margin-top: 12px;
   }
-  .footer {
-    text-align: center;
-    color: #64748b;
-    font-size: 13px;
-    padding: 20px;
-    line-height: 1.7;
-  }
-  .footer a { color: #38bdf8; text-decoration: none; }
+  .footer { text-align: center; color: #64748b; font-size: 13px; padding: 20px; line-height: 1.7; }
+  .footer a { color: #38bdf8; text-decoration: none; font-weight: bold; font-size: 15px; }
+  .footer a:hover { color: #fff; text-decoration: underline; }
   @media (max-width: 600px) {
     .header h1 { font-size: 26px; }
     .card { padding: 18px; }
@@ -147,12 +80,8 @@
 
   <div class="card">
     <h2><span>1</span> مقدمة</h2>
-    <p>
-      أهلاً بيك في <b style="color:#fff">عداد شقاوة</b>. احنا بنحترم خصوصيتك جداً، وعشان كده عملنا الصفحة دي عشان نوضحلك بالظبط احنا بناخد ايه، وبنستخدمه في ايه، وبنحميه ازاي.
-    </p>
-    <p style="margin-top:10px">
-      باستخدامك للتطبيق، انت بتوافق على سياسة الخصوصية دي. لو مش موافق، ممكن تمسح التطبيق في أي وقت.
-    </p>
+    <p>أهلاً بيك في <b style="color:#fff">عداد شقاوة</b>. احنا بنحترم خصوصيتك جداً، وعشان كده عملنا الصفحة دي عشان نوضحلك بالظبط احنا بناخد ايه، وبنستخدمه في ايه، وبنحميه ازاي.</p>
+    <p style="margin-top:10px">باستخدامك للتطبيق، انت بتوافق على سياسة الخصوصية دي. لو مش موافق، ممكن تمسح التطبيق في أي وقت.</p>
   </div>
 
   <div class="card">
@@ -162,9 +91,7 @@
       <li><b style="color:#fff">الموقع الجغرافي GPS:</b> بيشتغل بس لما انت تفعّله بنفسك، عشان يحسب سرعة المركبة والمسافة المقطوعة.</li>
       <li><b style="color:#fff">إعدادات الجهاز:</b> زي المسافة الكلية، مسافة صيانة الزيت، معايرة السرعة، والخلفية اللي انت اخترتها.</li>
     </ul>
-    <div class="highlight">
-      ⚠️ مهم: بيانات الموقع بتتعالج على جهازك بس، ومش بتتبعت لأي سيرفر خاص بينا في النسخة الحالية.
-    </div>
+    <div class="highlight">⚠️ مهم: بيانات الموقع بتتعالج على جهازك بس، ومش بتتبعت لأي سيرفر خاص بينا في النسخة الحالية.</div>
   </div>
 
   <div class="card">
@@ -178,10 +105,7 @@
 
   <div class="card">
     <h2><span>4</span> مشاركة البيانات مع أطراف تالتة</h2>
-    <p>
-      احنا <b style="color:#fff">لا نبيع ولا نشارك ولا نأجر</b> بياناتك لأي حد.
-      التطبيق لا يحتوي على إعلانات من شركات تتبع، ولا يرسل موقعك لأي شركة إعلانات.
-    </p>
+    <p>احنا <b style="color:#fff">لا نبيع ولا نشارك ولا نأجر</b> بياناتك لأي حد. التطبيق لا يحتوي على إعلانات من شركات تتبع، ولا يرسل موقعك لأي شركة إعلانات.</p>
   </div>
 
   <div class="card">
@@ -195,38 +119,34 @@
 
   <div class="card">
     <h2><span>6</span> أمان بياناتك</h2>
-    <p>
-      كل بياناتك بتتخزن على جهازك بس، ومش بتخرج منه. احنا بنستخدم أفضل الممارسات عشان نحافظ على إعداداتك، لكن مفيش طريقة على الإنترنت آمنة 100%، ولو حصل أي تغيير في سياستنا هنبلغك هنا.
-    </p>
+    <p>كل بياناتك بتتخزن على جهازك بس، ومش بتخرج منه. احنا بنستخدم أفضل الممارسات عشان نحافظ على إعداداتك، لكن مفيش طريقة على الإنترنت آمنة 100%، ولو حصل أي تغيير في سياستنا هنبلغك هنا.</p>
   </div>
 
   <div class="card">
     <h2><span>7</span> خصوصية الأطفال</h2>
-    <p>
-      التطبيق مناسب لكل الأعمار، واحنا مش بنجمع بيانات من الأطفال بشكل متعمد. لو انت ولي أمر وشاكك إن طفلك شارك أي بيانات، تواصل معانا وهنمسحها فوراً.
-    </p>
+    <p>التطبيق مناسب لكل الأعمار، واحنا مش بنجمع بيانات من الأطفال بشكل متعمد. لو انت ولي أمر وشاكك إن طفلك شارك أي بيانات، تواصل معانا وهنمسحها فوراً.</p>
   </div>
 
   <div class="card">
     <h2><span>8</span> تغييرات على سياسة الخصوصية</h2>
-    <p>
-      ممكن نحدث الصفحة دي من وقت للتاني. أي تحديث هيظهر هنا بتاريخ جديد، واستمرارك في استخدام التطبيق بعد التحديث معناه موافقتك على النسخة الجديدة.
-    </p>
+    <p>ممكن نحدث الصفحة دي من وقت للتاني. أي تحديث هيظهر هنا بتاريخ جديد، واستمرارك في استخدام التطبيق بعد التحديث معناه موافقتك على النسخة الجديدة.</p>
   </div>
 
   <div class="contact-box">
     <h2>عندك سؤال عن الخصوصية؟</h2>
     <p style="color:#e0f2fe">كلمنا في أي وقت، وهنرد عليك في أسرع وقت</p>
     <a href="mailto:hs7591456@gmail.com">hs7591456@gmail.com</a>
-    <p style="color:#bfdbfe; font-size:13px; margin-top:12px;">المطور: shqawa.pro</p>
+    <p style="margin-top:18px">
+      <a href="https://shqawa-pro.vercel.app/" target="_blank" style="background:transparent; color:#fff; padding:0; font-size:16px; text-decoration:underline;">🌐 زور موقعنا: shqawa-pro.vercel.app</a>
+    </p>
   </div>
 
 </div>
 
 <div class="footer">
   © 2026 عداد شقاوة - Shqawa Counter. جميع الحقوق محفوظة.<br>
-  <a href="https://shqawa.pro">shqawa.pro</a>
+  <a href="https://shqawa-pro.vercel.app/" target="_blank">shqawa-pro.vercel.app</a>
 </div>
 
 </body>
-    </html>
+</html>
